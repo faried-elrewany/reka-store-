@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="bg-gradient-to-r from-yellow-100 via-orange-100 to-red-100">
+    <header
+      class="z-50 flex justify-between px-4 bg-slate-900 font-semibold text-orange-400"
+    >
+      <div class="block py-nav px-nav">
+        <a
+          class="block shad text-xl font-bold tracking-widest text-orange-500 transition-all hover:-skew-x-12 hover:-skew-y-6"
+          href="#"
+          >Reka</a
+        >
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex">
+          <li>
+            <a
+              href="skillsSection.html"
+              class="flex items-center gap-2 py-nav px-nav transition-all hover:bg-slate-700"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                />
+              </svg>
+              Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="card.html"
+              class="block py-nav px-nav transition-all hover:bg-slate-700"
+              >category</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-nav px-nav transition-all hover:bg-slate-700"
+              >something</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="hidden md:block">
+        <ul class="flex items-center gap-2">
+          <li>
+            <a
+              href="/src/product-item.html"
+              class="flex items-center gap-2 py-nav px-nav transition-all hover:bg-slate-700"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+              Cart</a
+            >
+          </li>
+          <li class="relative group">
+            <a
+              href="/src/account.html"
+              class="flex gap-2 items-center py-nav px-nav transition-all hover:bg-slate-700"
+              >My Account
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </a>
+            <ul
+              class="z-40 absolute hidden bg-slate-500 right-0 top-full w-full group-hover:flex flex-col"
+            >
+              <li>
+                <a
+                  href="/src/profile.html"
+                  class="flex gap-2 items-center py-2 px-nav transition-all hover:bg-slate-700"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                    />
+                  </svg>
+                  my profile</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/src/cart.html"
+                  class="flex gap-2 items-center py-2 px-nav transition-all hover:bg-slate-700"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                    />
+                  </svg>
+                  watch list
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/src/orders.html"
+                  class="flex gap-2 items-center py-2 px-nav transition-all hover:bg-slate-700"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z"
+                    />
+                  </svg>
+                  orders</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/src/logout.html"
+                  class="flex gap-2 items-center py-2 px-nav transition-all hover:bg-slate-700"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
+                    />
+                  </svg>
+                  logout
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="">
+            <a
+              href="/src/login.html"
+              class="flex gap-2 py-nav px-nav transition-all hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
+                />
+              </svg>
+              Login</a
+            >
+          </li>
+          <li class="">
+            <a
+              href="/src/signup.html"
+              class="text-black flex gap-2 py-2 rounded px-3 transition-colors bg-orange-400 hover:bg-orange-600 font-semibold"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                />
+              </svg>
+              sign up now</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="block md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
+      <div
+        class="z-40 fixed w-[200px] h-full top-0 bottom-0 left-0 bg-slate-800 shadow-2xl transition-all md:hidden"
+      >
+        <ul class="flex flex-col">
+          <li>
+            <a
+              href="#"
+              class="flex items-center gap-2 py-nav px-nav transition-all hover:bg-slate-700"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                />
+              </svg>
+              Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="card.html"
+              class="block py-nav px-nav transition-all hover:bg-slate-700"
+              >category</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-nav px-nav transition-all hover:bg-slate-700"
+              >something</a
+            >
+          </li>
+        </ul>
+        <ul class="flex justify-center gap-2 flex-col">
+          <li>
+            <a
+              href="/src/product-item.html"
+              class="flex items-center gap-2 py-nav px-nav transition-all hover:bg-slate-700"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+              Cart</a
+            >
+          </li>
+          <li class="relative group">
+            <a
+              href="#"
+              class="flex gap-2 items-center justify-between py-nav px-nav transition-all hover:bg-slate-700"
+              >My Account
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </a>
+            <ul
+              class="z-40 hidden bg-slate-600 transition-all w-full group-hover:flex flex-col"
+            >
+              <li>
+                <a
+                  href="/src/profile.html"
+                  class="flex gap-2 items-center py-2 px-nav transition-all hover:bg-slate-700"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                    />
+                  </svg>
+                  my profile</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/src/cart.html"
+                  class="flex gap-2 items-center py-2 px-nav transition-all hover:bg-slate-700"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                    />
+                  </svg>
+                  watch list
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/src/orders.html"
+                  class="flex gap-2 items-center py-2 px-nav transition-all hover:bg-slate-700"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z"
+                    />
+                  </svg>
+                  orders</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/src/logout.html"
+                  class="flex gap-2 items-center py-2 px-nav transition-all hover:bg-slate-700"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
+                    />
+                  </svg>
+                  logout
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="">
+            <a
+              href="/src/login.html"
+              class="flex gap-2 py-nav px-nav transition-all hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
+                />
+              </svg>
+              Login</a
+            >
+          </li>
+          <li class="px-2">
+            <a
+              href="/src/signup.html"
+              class="text-black flex gap-2 py-2 rounded px-3 transition-colors bg-orange-400 hover:bg-orange-600"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                />
+              </svg>
+              sign up now</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div
+      class="relative flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+    >
+      <div class="max-w-md w-full space-y-8 p-10 bg-white rounded-xl z-10">
+        <div class="text-center">
+          <h2 class="mt-6 text-3xl font-bold text-orange-700">Welcom Back!</h2>
+          <p class="mt-2 text-sm text-gray-600">
+            Please sign in to your account
+          </p>
+        </div>
+        <div class="flex flex-row justify-center items-center space-x-3">
+          <span
+            class="w-11 h-11 items-center justify-center inline-flex rounded-full font-bold text-lg text-white bg-orange-400 hover:shadow-lg cursor-pointer transition ease-in duration-300"
+            ><i class="fa-brands fa-facebook"></i
+          ></span>
+          <span
+            class="w-11 h-11 items-center justify-center inline-flex rounded-full text-2xl text-white bg-orange-400 hover:shadow-lg cursor-pointer transition ease-in duration-300"
+            ><i class="fa-brands fa-twitter"></i
+          ></span>
+          <span
+            class="w-11 h-11 items-center justify-center inline-flex rounded-full font-bold text-lg text-white bg-orange-500 hover:shadow-lg cursor-pointer transition ease-in duration-300"
+            ><i class="fa-brands fa-linkedin"></i
+          ></span>
+        </div>
+        <div class="flex items-center justify-center space-x-2">
+          <span class="h-px w-16 bg-gray-300"></span>
+          <span class="text-gray-500 font-normal">OR</span>
+          <span class="h-px w-16 bg-gray-300"></span>
+        </div>
+        <form class="mt-8 space-y-6" action="#" method="POST">
+          <input type="hidden" name="remember" value="true" />
+          <div class="relative">
+            <label class="text-sm font-bold text-gray-700 tracking-wide"
+              >Email</label
+            >
+            <input
+              class="w-full text-base py-2 border-b border-gray-300 focus:outline-none focus:border-orange-500"
+              type=""
+              placeholder="mail@gmail.com"
+              value="faried_Fouad@gmail.com"
+            />
+          </div>
+          <div class="mt-8">
+            <label class="text-sm font-bold text-gray-700 tracking-wide">
+              Password
+            </label>
+            <input
+              class="w-full text-base py-2 border-b border-gray-300 focus:outline-none focus:border-orange-500"
+              type="password"
+              placeholder="Enter your password"
+              value="....."
+            />
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <input
+                id="remember_me"
+                name="remember_me"
+                type="checkbox"
+                class="h-4 w-4 accent-orange-300"
+              />
+              <label for="remember_me" class="ml-2 block text-sm text-gray-900">
+                Remember me
+              </label>
+            </div>
+            <div class="text-sm">
+              <a
+                href="#"
+                class="font-medium text-orange-500 hover:text-orange-600"
+              >
+                Forgot your password?
+              </a>
+            </div>
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="w-full flex justify-center bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 text-gray-100 p-4 rounded-full tracking-wide font-semibold focus:outline-none focus:shadow-outline hover:bg-gradient-to-tl from-yellow-500 via-orange-500 to-red-500 shadow-lg cursor-pointer transition ease-in duration-300"
+            >
+              Sign in
+            </button>
+          </div>
+          <p
+            class="flex flex-col items-center justify-center mt-10 text-center text-md text-gray-500"
+          >
+            <span>Don't have an account?</span>
+            <a
+              href="signup.html"
+              class="text-orange-500 hover:text-indigo-500no-underline hover:underline cursor-pointer transition ease-in duration-300"
+              >Sign up</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

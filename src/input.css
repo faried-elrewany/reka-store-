@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .py-nav {
+    @apply py-4;
+  }
+  .px-nav {
+    @apply px-5;
+  }
+}
+
+@layer c {
+  .active {
+    @apply outline outline-offset-2 outline-orange-600;
+  }
+}
+.btn {
+  @apply py-2 rounded px-3 transition-colors bg-orange-400 hover:bg-orange-600 text-white;
+}
+.table-description h3,
+.table-description h4 {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.table-description table > tbody > tr > td {
+  padding: 0.25rem 0.125rem;
+}
+.table-description table > tbody > tr > td:first-child {
+  @apply font-bold;
+}
+.table-description li {
+  @apply mb-2;
+}
+.margi {
+  margin: 0px 15vw;
+  width: 80vw;
+  font-size: 5vw;
+  @apply font-semibold;
+}
+
+/* في تلت حاجات مهمين هنا الاول انك تدي مارجين رايت اكتر من او تساوي المسافه بينها وبين السينتر علشان لما العنصر يصغير  السينتر ميتغيرش \
+  
+
+  
+  تاني حاجه ادي ويدس معين للخط 
+  يكون تبع الويدس بتاع الاسكرين 
+  ميكونش بيكسيل 
+
+الفونت سايز نفسه عادي  ادي اي قيم براحتك اهتم بس بالويدس بتاع العنصر الي فيه الكلام وامارجين الليفت والرايت 
+ومتنساش طبعا الجافا اسكريبت 
+الويدس لازم يكون كبير علشان اما تصغر الابعاد بتاعتك متتغيرش ركز ف الكلمتين دول 
+يعني ممكن تحط الويدس قيمة كبيرة وخلاص عامة والمارجين اكس قيمة معقوله بحيث متصغرش لما تيجي تصغر الويدس بالجافا اسكريبت 
+
+بعد ماغلطت ومكنتش فاهم بالظبط كذا حاجه بيحصل كده ليه اكتشفت ان انا في حاجات عاملها بال فيوبورت هايت والمفروض كل حاجه تكون بالفيو بورت ويدس علشان الريسبونسيف 
+
+
+*/
+.shad {
+  filter: drop-shadow(5px 10px 3px rgb(249, 115, 22));
+}
+
+/* // hover box shadow skills section portfoliiiiiiiio */
+.skill div:hover {
+  /* background-color: blue; */
+  box-shadow: 0 0 2rem white;
+}
+.skill div:hover svg {
+  color: green;
+}
+.skills-parent {
+  perspective: 100rem;
+}
+.cer {
+  width: 30rem;
+  background: linear-gradient(90deg, black 75%, transparent);
+}
+.skill {
+  width: 45rem;
+  z-index: -1;
+  position: relative;
+  transform: rotateY(300deg);
+}
+.skill-sm {
+  transform: rotateY(312deg);
+}
+/* // for all headings */
+.shade {
+  /* font-family: "League Gothic", sans-serif; */
+  transform: rotate(15deg);
+  position: absolute;
+  top: -20%;
+  left: 60%;
+  font-size: 20rem;
+  @apply text-stone-300;
+  font-weight: bold;
+  z-index: -1;
+}
